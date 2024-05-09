@@ -1,0 +1,1 @@
+g++ tokenization.cpp rec_file.cpp main.cpp handle.cpp declare_set.cpp syntax_tree.cpp
