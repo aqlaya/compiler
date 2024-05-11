@@ -1,6 +1,6 @@
-#include "declare_set.hpp"
-#include "syntax_tree.hpp"
-#include "rec_file.hpp"
+#include <declare_set.hpp>
+#include <syntax_tree.hpp>
+#include <rec_file.hpp>
 
 void handle_string(std::ostream& , std::ostream&,  syntax_tree::node*);
 size_t helper_handle_token(struct_tokens& , record_file& , size_t , std::set<std::string> &);
@@ -58,8 +58,8 @@ size_t helper_handle_token(struct_tokens& tokens, record_file& stream, size_t i,
 
 int main(int args, char** argv) {
     /* strem i/o   */
-    std::ifstream file("./data/file.txt");
-    std::ofstream o_file("./data/o_file.asm");
+    std::ifstream file(argv[1]);
+    std::ofstream o_file(argv[2]);
 
 
     vector_str v_str;

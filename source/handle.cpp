@@ -1,5 +1,5 @@
-#include "declare_set.hpp"
-#include "syntax_tree.hpp"
+#include <declare_set.hpp>
+#include <syntax_tree.hpp>
 
 static size_t amount_compare = 0;
 
